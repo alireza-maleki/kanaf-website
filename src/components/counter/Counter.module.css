@@ -1,0 +1,23 @@
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    transform: translateY(-75%) rotate(90deg);
+    right: -3rem;
+    background-color: #37caba;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    transform: translateY(-100%) rotate(90deg);
+    right: -1rem;
+    background-color: #37caba;
+}

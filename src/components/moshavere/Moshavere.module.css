@@ -1,0 +1,13 @@
+.icons {
+  animation: rotate-phone 3s ease-in infinite ;
+}
+
+
+@keyframes rotate-phone {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

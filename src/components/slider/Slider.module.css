@@ -1,0 +1,45 @@
+.slider-background {
+    border-bottom-left-radius: 10rem;
+}
+
+.slider-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 50rem;
+    height: 50rem;
+    border: 4rem solid rgba(104, 123, 254, 0.15);
+    padding: 4rem;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+.shadow-title {
+    box-shadow: 2px 2px 15px 1px white;
+}
+
+
+  @media (max-width: 768px) {
+    .slider-background::before {
+        width: 25rem;
+        height: 25rem;
+        border-width: 3rem;
+        top: 12%;
+        right: -15%;
+    }
+  }
+  
+  /* .slider-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 2rem solid rgba(104, 123, 254, 0.64);
+    padding: 3rem;
+    z-index: 99;
+    border-radius: 50%;
+    bottom: -30px;
+    right: 4px;
+  } */

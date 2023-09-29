@@ -1,0 +1,83 @@
+.logo {
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: 'Bebas Neue', sans-serif, 'Lobster', cursive;
+}
+
+
+.menu-list li {
+    position: relative;
+    padding: 1rem 0;
+    transition: all 0.3s ease-in;
+}
+
+.menu-list > li::after {
+  content: "";
+  position: absolute;
+  background-color: #0137A4;
+  width: 30%;
+  height: 0.15rem;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.menu-list > li:hover::after {
+  opacity: 1;
+  visibility: visible;
+  width: 80%;
+}
+
+.menu-list > li:hover {
+  color: #0137A4;
+}
+
+
+.mobile-menu {
+      border-top: 2px solid #ccc;
+      position: absolute;
+      width: 80%;
+      height: 100vh;
+      top: 100%;
+      left: 0;
+      right: 0;
+      transform: translateX(100%);
+      transition: all 0.6s ease-in;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}
+
+
+/* تنظیمات کلی منو همبرگر */
+.hamburger-menu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  /* تنظیمات خط‌های همبرگر */
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 8px auto;
+    transition: transform 0.8s, opacity 0.3s;
+  }
+  
+  /* تنظیمات همبرگر فعال */
+  .hamburger.is-active .line:nth-child(1) {
+    transform: translateY(15px) rotate(410deg);
+    /* background-color: #fff; */
+  }
+  .hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.is-active .line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+    /* background-color: #fff; */
+  }

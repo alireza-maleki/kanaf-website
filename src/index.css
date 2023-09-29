@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: vazir;
+  src: url("../public/font/Vazir-Regular-FD.woff") format("woff");
+  font-weight: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url("../public/font/Vazir-Bold-FD.woff") format("woff");
+  font-weight: bold;
+  font-display: block;
+}
+
+body {
+  font-family: Vazir;
+  overflow-x: hidden;
+}
+
+/* === Swiper.js === */
+.swiper-pagination-bullet-active {
+  background-color: #0137A4 !important;
+}
+
+.swiper-pagination-bullet {
+  padding: 5px;
+}
+
+
+/* ============================== CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

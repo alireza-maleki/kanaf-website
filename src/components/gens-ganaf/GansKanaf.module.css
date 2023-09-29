@@ -1,0 +1,4 @@
+.list-items li:nth-child(odd) {
+    list-style-type: disc !important;
+    color: rgba(0,0,0,0.6) !important;
+}
