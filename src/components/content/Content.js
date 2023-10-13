@@ -12,7 +12,7 @@ import img2 from "../images/content/2.png";
 
 const Content = () => {
   return (
-    <div id="khadamat" className="py-14 w-screen h-[520px] bg-[#fff]">
+    <div id="khadamat" className="py-14 w-screen min-h-[520px] bg-[#fff]">
       <div className="w-full h-full">
         <div className="w-full mx-auto text-center">
           <h1 className="font-black text-[18px] pb-3">
